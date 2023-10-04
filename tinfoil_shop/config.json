@@ -1,6 +1,6 @@
 {
     "name": "Tinfoil Shop",
-    "version": "1.0",
+    "version": "1.0.1",
     "description": "Manage your own local tinfoil shop (NSP switch games)",
     "slug": "tinfoil_shop",
     "codenotary": "torf@home.fr",
