@@ -1,4 +1,4 @@
 # https://developers.home-assistant.io/docs/add-ons/repository#repository-configuration
 name: Own Repository
 url: https://github.com/torf/hassio-addons
-maintainer: torf
+maintainer: torf@home.fr
