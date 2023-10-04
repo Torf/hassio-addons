@@ -73,6 +73,7 @@
     },
     "slug": "tinfoil_shop",
     "url": "https://github.com/torf/hassio-addons/blob/master/tinfoil-shop/Readme.md",
+    "udev": "true",
     "version": "1.0",
     "webui": "[PROTO:ssl]://[HOST]:[PORT:8465]"
   }
