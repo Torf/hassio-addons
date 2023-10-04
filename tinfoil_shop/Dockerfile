@@ -31,16 +31,6 @@ ENV S6_CMD_WAIT_FOR_SERVICES=1 \
 # 3 Install apps #
 ##################
 
-# Copy local files
-COPY rootfs/ /
-
-# Modules
-ARG MODULES="00-banner.sh 01-custom_script.sh 00-local_mounts.sh"
-
-# Automatic modules download
-ADD "https://raw.githubusercontent.com/alexbelgium/hassio-addons/master/.templates/ha_automodules.sh" "/ha_automodules.sh"
-RUN chmod 744 "/ha_automodules.sh"
-RUN /ha_automodules.sh "$MODULES" && rm /ha_automodules.sh
 
 ################
 # 4 Entrypoint #
