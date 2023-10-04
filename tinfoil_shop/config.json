@@ -4,7 +4,7 @@
       "amd64",
       "armv7"
     ],
-    "codenotary": "torf",
+    "codenotary": "torf@home.fr",
     "description": "Manage your own local tinfoil shop (NSP switch games)",
     "devices": [
       "/dev/dri",
@@ -54,7 +54,6 @@
       "/dev/nvme1",
       "/dev/nvme2"
     ],
-    "image": "a1ex4/ownfoil:v2",
     "init": false,
     "map": [
       "config:rw",
