@@ -28,4 +28,9 @@
     "schema": {},
     "url": "https://github.com/torf/hassio-addons/blob/master/tinfoil-shop/Readme.md",
     "init": false
+    "init": false,
+    "ingress": true,
+    "ingress_port": 8465,
+    "panel_icon": "mdi:gamepad-square-outline",
+    "panel_admin": false
   }
