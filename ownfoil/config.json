@@ -1,6 +1,6 @@
 {
     "name": "Ownfoil",
-    "version": "1.0.7",
+    "version": "1.0.8",
     "description": "Manage your own local Tinfoil shop ! Please check https://github.com/a1ex4/ownfoil for app maintenance.",
     "slug": "ownfoil",
     "codenotary": "torf@home.fr",
@@ -27,7 +27,5 @@
     "options": {},
     "schema": {},
     "url": "https://github.com/torf/hassio-addons/blob/master/tinfoil-shop/Readme.md",
-    "init": false,
-    "panel_icon": "mdi:gamepad-square-outline",
-    "panel_admin": false
+    "init": false
 }
