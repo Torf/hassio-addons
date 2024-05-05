@@ -38,7 +38,7 @@ RUN if [ ! -f /bin/sh ] && [ -f /usr/bin/sh ]; then ln -s /usr/bin/sh /bin/sh; f
 
 WORKDIR /
 COPY install_script.sh install_script.sh
-RUN /install_script.sh
+RUN /bin/sh /install_script.sh
 
 ################
 # 4 Entrypoint #
