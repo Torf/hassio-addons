@@ -26,6 +26,6 @@
     "webui": "[PROTO:ssl]://[HOST]:[PORT:3000]",
     "options": {},
     "schema": {},
-    "url": "https://github.com/torf/hassio-addons/blob/master/tinfoil-shop/Readme.md",
+    "url": "https://github.com/torf/hassio-addons/blob/master/habitica/Readme.md",
     "init": false
 }
