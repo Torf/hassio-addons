@@ -40,14 +40,15 @@ RUN node -v
 RUN git --version
 
 COPY install_script.sh /install_script.sh
-RUN CHMOD 777 /install_script.sh &&  /install_script.sh
+RUN chmod 777 "/install_script.sh"
+RUN /install_script.sh
 
 ################
 # 4 Entrypoint #
 ################
 
 COPY wrapper_script.sh /wrapper_script.sh
-RUN CHMOD 777 /wrapper_script.sh
+RUN chmod 777 "/wrapper_script.sh"
 CMD [ "/wrapper_script.sh" ]
 
 ############
