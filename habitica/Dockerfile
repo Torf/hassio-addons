@@ -36,17 +36,18 @@ ENV S6_CMD_WAIT_FOR_SERVICES=1 \
 RUN if [ ! -f /bin/sh ] && [ -f /usr/bin/sh ]; then ln -s /usr/bin/sh /bin/sh; fi && \
     if [ ! -f /bin/bash ] && [ -f /usr/bin/bash ]; then ln -s /usr/bin/bash /bin/bash; fi
 
-RUN apk update && apk add git
+RUN apk update && apk add bash git
+RUN node -v
 
-COPY install_script.sh install_script.sh
-RUN /install_script.sh
+COPY install_script.sh /install_script.sh
+RUN CHMOD 777 /install_script.sh &&  /install_script.sh
 
 ################
 # 4 Entrypoint #
 ################
 
-WORKDIR /
-COPY wrapper_script.sh wrapper_script.sh
+COPY wrapper_script.sh /wrapper_script.sh
+RUN CHMOD 777 /wrapper_script.sh
 CMD [ "/wrapper_script.sh" ]
 
 ############
