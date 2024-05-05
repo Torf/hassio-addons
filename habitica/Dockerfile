@@ -36,6 +36,8 @@ ENV S6_CMD_WAIT_FOR_SERVICES=1 \
 RUN if [ ! -f /bin/sh ] && [ -f /usr/bin/sh ]; then ln -s /usr/bin/sh /bin/sh; fi && \
     if [ ! -f /bin/bash ] && [ -f /usr/bin/bash ]; then ln -s /usr/bin/bash /bin/bash; fi
 
+RUN apt-get update && apt-get install -y supervisor
+
 RUN node -v
 RUN git --version
 
@@ -47,9 +49,8 @@ RUN /install_script.sh
 # 4 Entrypoint #
 ################
 
-COPY wrapper_script.sh /wrapper_script.sh
-RUN chmod 777 "/wrapper_script.sh"
-CMD [ "/wrapper_script.sh" ]
+COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
+CMD ["/usr/bin/supervisord"]
 
 ############
 # 5 Labels #
