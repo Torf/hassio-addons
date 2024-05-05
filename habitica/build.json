@@ -1,0 +1,10 @@
+{
+    "build_from": {
+      "aarch64": "node:14.15.0",
+      "amd64": "node:14.15.0",
+      "armv7": "node:14.15.0"
+    },
+    "codenotary": {
+      "signer": "torf@home.fr"
+    }
+  }
