@@ -31,15 +31,9 @@ ENV S6_CMD_WAIT_FOR_SERVICES=1 \
 # 3 Install apps #
 ##################
 
-
-WORKDIR /usr/
-RUN git clone https://github.com/HabitRPG/habitica.git
-
-# Install global packages
-RUN npm install -g gulp-cli mocha
-
-RUN npm install
-RUN npm run postinstall
+WORKDIR /
+COPY install_script.sh install_script.sh
+RUN install_script.sh
 
 ################
 # 4 Entrypoint #
