@@ -1,8 +1,6 @@
 {
     "build_from": {
-      "aarch64": "a1ex4/ownfoil:v2",
-      "amd64": "a1ex4/ownfoil:v2",
-      "armv7": "a1ex4/ownfoil:v2"
+      "amd64": "postpersonality/ownfoil:latest",
     },
     "codenotary": {
       "signer": "torf@home.fr"
