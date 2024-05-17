@@ -1,6 +1,6 @@
 {
     "name": "Ownfoil",
-    "version": "1.0.10",
+    "version": "1.0.12",
     "description": "Manage your own local Tinfoil shop ! Please check https://github.com/a1ex4/ownfoil for app maintenance.",
     "slug": "ownfoil",
     "codenotary": "torf@home.fr",
@@ -14,7 +14,6 @@
       "share:rw"
     ],
     "environment": {
-        "ROOT_DIR": "/share/roms/",
         "PGID": "1000",
         "PUID": "1000"
       },

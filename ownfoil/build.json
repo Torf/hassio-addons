@@ -1,6 +1,6 @@
 {
     "build_from": {
-      "amd64": "postpersonality/ownfoil:latest",
+      "amd64": "a1ex4/ownfoil:v2",
     },
     "codenotary": {
       "signer": "torf@home.fr"
