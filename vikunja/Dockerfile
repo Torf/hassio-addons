@@ -31,9 +31,10 @@ ENV S6_CMD_WAIT_FOR_SERVICES=1 \
 # 3 Install apps #
 ##################
 
-RUN mkdir /share/vikunja/files
-RUN mkdir /share/vikunja/db
-RUN chown 1000 /share/vikunja/files /share/vikunja/db
+RUN mkdir -p /share/vikunja/files
+RUN mkdir -p /share/vikunja/db
+RUN chown 1000 /share/vikunja/files
+RUN chown 1000 /share/vikunja/db
 
 ################
 # 4 Entrypoint #
