@@ -1,0 +1,36 @@
+{
+    "name": "Vikunja",
+    "version": "1.0.0",
+    "description": "Manage your own todolist.",
+    "slug": "vikunja",
+    "codenotary": "torf@home.fr",
+    "arch": [
+      "aarch64",
+      "amd64",
+      "armv7"
+    ],
+    "map": [
+      "config:rw",
+      "share:rw"
+    ],
+    "environment": {
+        "PGID": "1000",
+        "PUID": "1000",
+        "VIKUNJA_SERVICE_JWTSECRET": "secret123",
+        "VIKUNJA_SERVICE_PUBLICURL": "http://192.168.1.83:3456/",
+        "VIKUNJA_DATABASE_TYPE": "sqlite",
+        "VIKUNJA_DATABASE_PATH": "/share/vikunja/db/vikunja.db",
+        "VIKUNJA_FILES_BASEPATH": "/share/vikunja/files"
+    },
+    "ports": {
+      "3456/tcp": 3456
+    },
+    "ports_description": {
+      "3456/tcp": "Web interface"
+    },
+    "webui": "[PROTO:ssl]://[HOST]:[PORT:3456]",
+    "options": {},
+    "schema": {},
+    "url": "https://github.com/torf/hassio-addons/blob/master/tinfoil-shop/Readme.md",
+    "init": false
+}

@@ -1,0 +1,10 @@
+{
+    "build_from": {
+      "amd64": "vikunja/vikunja:latest",
+      "armv7": "vikunja/vikunja:latest",
+      "armv8": "vikunja/vikunja:latest"
+    },
+    "codenotary": {
+      "signer": "torf@home.fr"
+    }
+  }
