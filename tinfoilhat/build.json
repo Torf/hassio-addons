@@ -1,0 +1,10 @@
+{
+    "build_from": {
+      "armv7": "vinicioslc/tinfoil-hat:latest",
+      "amd64": "vinicioslc/tinfoil-hat:latest",
+      "aarch64": "vinicioslc/tinfoil-hat:latest"
+    },
+    "codenotary": {
+      "signer": "torf@home.fr"
+    }
+  }

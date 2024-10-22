@@ -1,0 +1,34 @@
+{
+    "name": "TinfoilHat",
+    "version": "1.0.1",
+    "description": "Create your own local Tinfoil shop !",
+    "slug": "tinfoilhat",
+    "codenotary": "torf@home.fr",
+    "arch": [
+      "aarch64",
+      "amd64",
+      "armv7"
+    ],
+    "map": [
+      "config:rw",
+      "share:rw"
+    ],
+    "environment": {
+      "DEBUG": "*",
+      "AUTH_USERS":"root:password",
+      "UNAUTHORIZED_MSG":"No tricks and treats for you!!",
+      "WELCOME_MSG":"The Server Just Works!!",
+      "NX_PORTS":"5000"
+      },
+    "ports": {
+      "8465/tcp": 80
+    },
+    "ports_description": {
+      "8465/tcp": "Web interface"
+    },
+    "webui": "[PROTO:ssl]://[HOST]:[PORT:8465]",
+    "options": {},
+    "schema": {},
+    "url": "https://github.com/torf/hassio-addons/blob/master/tinfoil-shop/Readme.md",
+    "init": false
+}
